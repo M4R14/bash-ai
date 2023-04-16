@@ -6,9 +6,14 @@ export default class OpenAiService {
     private model: string = "text-davinci-003";
 
     constructor() {
+        const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
+        if (!OPENAI_API_KEY) {
+            throw new Error("OPENAI_API_KEY is not defined");
+        }
+
         const configuration = new Configuration({
-            // apiKey: "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",
-            apiKey: process.env.OPENAI_API_KEY,
+            apiKey: OPENAI_API_KEY,
         });
 
         const openai = new OpenAIApi(configuration);
