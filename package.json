@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
