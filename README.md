@@ -7,7 +7,7 @@ Bash AI is a command-line tool that uses the power of OpenAI's GPT-3 to provide 
 You can install Bash AI via npm:
 
 ```bash
-npm install -g bash-ai
+npm install -g @markvachi/bash-ai
 ```
 
 ## Usage

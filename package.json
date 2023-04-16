@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -12,7 +12,7 @@
     "dev": "ts-node-dev --respawn src/app.ts",
     "clean": "tsc --build --clean",
     "build": "tsc",
-    "preinstall": "npm run clean && npm run build && echo 'Installing.'",
+    "preinstall": "ls -l | grep 'node_modules' && echo 'preinstall'",
     "postinstall": "npm run clean && npm run build && echo 'Installed.'",
     "prepare": "npm run clean && npm run build && echo 'Prepared.'",
     "prepublishOnly": "npm run clean && npm run build ",
