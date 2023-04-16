@@ -1,6 +1,6 @@
 {
-  "name": "bash-ai",
-  "version": "1.0.0",
+  "name": "@markvachi/bash-ai",
+  "version": "1.0.1",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "dev": "ts-node-dev --respawn src/app.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepack": "npm run build"
   },
   "dependencies": {
     "commander": "^10.0.1",
@@ -19,5 +20,19 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "ts-node-dev": "^2.0.0"
-  }
+  },
+  "description": "Bash AI is a command-line tool that uses the power of OpenAI's GPT-3 to provide intelligent suggestions and automation for your bash commands.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4R14/bash-ai.git"
+  },
+  "keywords": [
+    "gpt-3",
+    "ai",
+    "open-ai"
+  ],
+  "bugs": {
+    "url": "https://github.com/M4R14/bash-ai/issues"
+  },
+  "homepage": "https://github.com/M4R14/bash-ai#readme"
 }
