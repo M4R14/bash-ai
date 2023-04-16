@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -15,6 +15,13 @@
     "prepack": "npm run build",
     "prepare": "npm run build",
     "postinstall": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/app.js",
+      "require": "./dist/app.js"
+    },
+    "./package.json": "./package.json"
   },
   "dependencies": {
     "commander": "^10.0.1",
