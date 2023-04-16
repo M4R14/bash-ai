@@ -12,6 +12,7 @@
     "dev": "ts-node-dev --respawn src/app.ts",
     "clean": "tsc --build --clean",
     "build": "tsc",
+    "postinstall": "npm run clean && npm run build",
     "prepublishOnly": "npm run clean && npm run build",
     "preversion": "npm run clean && npm run build",
     "version": "npm run clean && npm run build",
