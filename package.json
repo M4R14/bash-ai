@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "dev": "ts-node-dev --respawn src/app.ts",
-    "build": "tsc",
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && tsc",
     "prepack": "npm run build"
   },
   "dependencies": {
@@ -34,5 +35,13 @@
   "bugs": {
     "url": "https://github.com/M4R14/bash-ai/issues"
   },
-  "homepage": "https://github.com/M4R14/bash-ai#readme"
+  "homepage": "https://github.com/M4R14/bash-ai#readme",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
