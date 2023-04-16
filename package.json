@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -10,9 +10,11 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "dev": "ts-node-dev --respawn src/app.ts",
-    "clean": "rm -rf ./lib",
+    "clean": "tsc --build --clean",
     "build": "npm run clean && tsc",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "npm run build",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "commander": "^10.0.1",
