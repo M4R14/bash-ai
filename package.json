@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -29,10 +29,10 @@
   },
   "dependencies": {
     "commander": "^10.0.1",
-    "openai": "^3.2.1"
+    "openai": "^3.2.1",
+    "@types/node": "^18.15.11"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
     "ts-node-dev": "^2.0.0"
   },
   "description": "Bash AI is a command-line tool that uses the power of OpenAI's GPT-3 to provide intelligent suggestions and automation for your bash commands.",
