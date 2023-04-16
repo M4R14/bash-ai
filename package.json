@@ -1,6 +1,6 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.13",
+  "version": "1.0.15",
   "main": "bin/bash-ai",
   "author": "markvahi",
   "bin": {
@@ -11,10 +11,7 @@
     "start": "ts-node src/app.ts",
     "dev": "ts-node-dev --respawn src/app.ts",
     "clean": "tsc --build --clean",
-    "build": "npm run clean && tsc",
-    "prepack": "npm run build",
-    "prepare": "npm run build",
-    "postinstall": "npm run build"
+    "build": "tsc"
   },
   "exports": {
     ".": {
