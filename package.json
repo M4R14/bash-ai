@@ -1,0 +1,23 @@
+{
+  "name": "bash-ai",
+  "version": "1.0.0",
+  "main": "bin/bash-ai",
+  "author": "markvahi",
+  "bin": {
+    "??": "bin/bash-ai"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "commander": "^10.0.1",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node-dev": "^2.0.0"
+  }
+}
