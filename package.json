@@ -1,8 +1,8 @@
 {
   "name": "@markvachi/bash-ai",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "bin/bash-ai",
-  "author": "markvahi",
+  "author": "markvahi <[vachirawit.mark@gmail.com]>",
   "bin": {
     "??": "bin/bash-ai"
   },
